@@ -1,0 +1,54 @@
+.course {
+    margin: 20px 0px;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 1px 1px 10px;
+}
+
+.courseCode {
+    font-size: 32px;
+    margin: 0px;
+}
+
+.courseTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* 
+    Seasons stuff 
+*/
+.seasonsList {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.tag {
+    padding: 0px 15px;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.fallTag {
+    background-color: #DE591C;
+}
+
+.winterTag {
+    background-color: #085C74;
+}
+
+.summerTag {
+    background-color: #33CA7F;
+}
+
+.creditTag {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #777777;
+}

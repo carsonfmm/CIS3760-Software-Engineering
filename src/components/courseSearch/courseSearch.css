@@ -1,0 +1,115 @@
+/*
+    Main stuff idk 
+*/
+.courseContainer {
+    width: 100%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCourseContainer {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    CSS for Select part of UI
+*/
+.filtersDisplay {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterSelect {
+    margin-bottom: 50px;
+    width: 65%;
+}
+
+.weightInput {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border: solid 1px hsl(0, 0%, 80%);
+    border-radius: 4px;
+    min-height:38px;
+    font: inherit;
+    box-sizing: border-box;
+    padding: 2px 8px;
+    margin-bottom: 40px;
+}
+
+.searchButton {
+    width: 65%;
+    font: inherit;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 4px;
+    background: #C51C1C;
+    color: white;
+    border: 0px;
+}
+
+.searchButton:hover {
+    cursor: pointer;
+    background: #801212;
+}
+
+
+/*
+    CSS for Course Display part of UI
+*/
+.courseDisplay {
+    height: 100%;
+    width: 70%;
+}
+
+.courseSearchContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #2F3036;
+}
+
+.columnOne {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.columnTwo {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.columnThree {
+    width: 30%;
+}
+
+.loadingBar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-masonry-grid {
+  display: flex;
+  padding-right: 20px;
+  width: 100%;
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 20px;
+}

@@ -1,0 +1,81 @@
+
+.optionsContainer {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.subjectSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.graphTitleText {
+  font: inherit;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.select {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.subjectButton {
+  width: 100%;
+  font: inherit;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+  background: #C51C1C;
+  color: white;
+  margin: 20px 0px 0px 0px;
+  border: 0px;
+}
+
+.majorButton{
+  width: 100%;
+  font: inherit;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+  background: #C51C1C;
+  color: white;
+  margin: 20px 0px 0px 0px;
+  border: 0px;
+}
+
+.subjectButton:hover {
+  cursor: pointer;
+  background: #801212;
+}
+
+.majorButton:hover {
+  cursor: pointer;
+  background: #801212;
+}
+
+.react-flow__node-default {
+  background: #fff;
+  border: 3px solid #1a192b;
+  border-radius: 3px;
+  color: #222;
+  font-size: 30px !important;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  width: 200px !important;
+  height: 60px;
+}
+
+.react-flow__edge-path {
+  stroke-width: 3 !important;
+}

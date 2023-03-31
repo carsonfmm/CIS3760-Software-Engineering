@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve myproject
+After=network.target
+
+[Service]
+User=sysadmin
+Group=www-data
+WorkingDirectory=/home/sysadmin/w22_cis3760_team07/flask
+Environment="PATH=/home/sysadmin/w22_cis3760_team07/flask/venv/bin"
+ExecStart=/home/sysadmin/w22_cis3760_team07/flask/venv/bin/uwsgi --ini wsgi.ini
+
+[Install]
+WantedBy=multi-user.target

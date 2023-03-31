@@ -1,0 +1,96 @@
+html, body, #root { 
+  height: 100%;
+}
+
+.title {
+  background: none;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  font-size: 22px;
+  border: 0px;
+  margin-left: 30px;
+}
+
+.title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.controls {
+  bottom: 10px;
+  left: initial !important;
+  right: 10px !important;
+  position: absolute;
+  z-index: 5;
+}
+
+.container {
+  width: 100%;
+  height: 100%
+}
+
+.headerOption {
+  background: none;
+  border: none;
+  display: inline-block;
+  color: white;
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.imageContainer {
+  margin-bottom: 20px;
+  width: 70%;
+  height: 600px;
+  background: #2f3036;
+  border-radius: 4px;
+}
+
+.select {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.submitButton {
+  width: 100%;
+  font: inherit;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+  background: #C51C1C;
+  color: white;
+  margin: 20px 0px 0px 0px;
+  border: 0px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background: #801212;
+}
+
+.circleButton:hover {
+  cursor: pointer;
+}
+
+.circleButton{
+  border-radius: 50%;
+  height: 400px;
+}
+
+.circleButtonContainer{
+  display: flex;
+  width: 50%;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10%;
+}

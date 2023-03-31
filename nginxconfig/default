@@ -1,0 +1,38 @@
+#
+# Default HTTPS server configuration
+#
+server {
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	server_name 131.104.49.101;
+
+	root /home/sysadmin/app-deploy/build;
+	index index.html;
+
+	include snippets/self-signed.conf;
+	include snippets/ssl-params.conf;
+
+	# normal endpoint for react
+	location / {
+		try_files $uri /index.html;
+	} 
+	
+	# api endpoint for flask server
+	location /api {
+		include uwsgi_params;
+		uwsgi_pass unix:/home/sysadmin/w22_cis3760_team07/flask/project.sock;	
+	}
+}
+
+#
+# Redirecting all HTTP requests to HTTPS
+#
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name 131.104.49.101;
+   	return 301 https://$server_name$request_uri;
+}
+
