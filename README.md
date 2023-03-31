@@ -1,5 +1,7 @@
 # Sprint 9: Course Drop Impact
 
+Suggested students not copy parts for coursework
+
 ## Initial Setup
 Clone the files and run our install script, this will install nginx, nodejs, and npm if you don't already have it. It will also run npm install to install and setup our node dependencies.
 ```
